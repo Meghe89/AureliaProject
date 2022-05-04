@@ -1,6 +1,6 @@
 <template>
-  <h1>${heading}</h1>
-  <h3>${subheading}</h5>
+  <h1>Edit</h1>
+  <h3>Scegli il campo da modificare e poi clicca sul bottone.</h5>
   
   <form>   
 
@@ -13,7 +13,7 @@
     <label>Year</label>
     <input type="number" placeholder="${data.year}" value.bind="data.year">
  
-    <button click.delegate="update(data)" disabled.bind="!data.title || !data.director || !data.year">edit</button>
+    <button click.delegate="update()" disabled.bind="!data.title || !data.director || !data.year">edit</button>
   </form>
 
   

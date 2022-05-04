@@ -6,8 +6,6 @@ import {Router} from 'aurelia-router';
 export class edit{
   constructor(router) {
     this.router = router;
-    this.heading = 'Edit';
-    this.subheading = 'Scegli il campo da modificare e poi clicca sul bottone.';
   }
 
   activate(params) {
@@ -31,7 +29,7 @@ export class edit{
     }
   }
   
-  update(title,id) {
+  update() {
     let token = window.localStorage.getItem('token');
     fetch(`http://kamaji2.dev.netbuilder.it/00900001/movies/${this.params.id}`, {
       method: 'PATCH',
