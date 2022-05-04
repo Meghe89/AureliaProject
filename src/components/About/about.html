@@ -1,0 +1,28 @@
+
+<template>
+  <h1>${heading}</h1>
+  <h3>${subheading}</h5>
+
+
+  <table>
+    <tr>
+      <th>Director</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Year</th>
+      <th>Edit</th>
+    </tr>
+    <tr repeat.for="movie of data">
+      <td >${movie.director}</td>
+      <td >${movie.title}</td>
+      <td >${movie.category[0].name}, ${movie.category[1].name}</td>
+      <td> ${movie.year}</td>
+      <td ><button class="movie-btn" click.delegate = "updateContent(movie)">Update Content</button></td>
+    </tr>
+    <tr>
+     
+    </tr>
+  </table>
+
+  
+</template>

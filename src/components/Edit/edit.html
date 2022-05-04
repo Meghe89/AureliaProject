@@ -1,0 +1,20 @@
+<template>
+  <h1>${heading}</h1>
+  <h3>${subheading}</h5>
+  
+  <form>   
+
+    <label>Director</label>
+    <input type="text" placeholder="${data.director}" value.bind="director">
+
+    <label>Title</label>
+    <input type="text" placeholder="${data.title}" value.bind="title">
+
+    <label>Year</label>
+    <input type="number" placeholder="${data.year}" value.bind="year">
+ 
+    <button click.delegate = "update(title,data)" type="submit" disabled.bind="!title || !director || !year" value="title,director,year">edit</button>
+  </form>
+
+  
+</template>

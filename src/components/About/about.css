@@ -1,0 +1,45 @@
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+table,
+th,
+td{
+  border: 1px solid #000;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+button{
+  margin: 10px 20px;
+  border: none;
+  padding: 15px;
+  background-color: #90ee90;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.movie-btn{
+  background-color: #ff0000;
+  color: white;
+}
+
+td{
+  padding: 0 10px 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 40vh;
+  justify-content: space-evenly;
+
+}
+input{
+  height: 30px;
+}
