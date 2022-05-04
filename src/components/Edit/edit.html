@@ -5,15 +5,15 @@
   <form>   
 
     <label>Director</label>
-    <input type="text" placeholder="${data.director}" value.bind="director">
+    <input type="text" placeholder="${data.director}" value.bind="data.director">
 
     <label>Title</label>
-    <input type="text" placeholder="${data.title}" value.bind="title">
+    <input type="text" placeholder="${data.title}" value.bind="data.title">
 
     <label>Year</label>
-    <input type="number" placeholder="${data.year}" value.bind="year">
+    <input type="number" placeholder="${data.year}" value.bind="data.year">
  
-    <button click.delegate = "update(title,data)" type="submit" disabled.bind="!title || !director || !year" value="title,director,year">edit</button>
+    <button click.delegate="update(data)" disabled.bind="!data.title || !data.director || !data.year">edit</button>
   </form>
 
   
