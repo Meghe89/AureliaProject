@@ -12,7 +12,7 @@ export class App {
       {  route: ['', 'home'],   name: 'home',    moduleId: PLATFORM.moduleName('./components/Home/home'), nav:true, title:'Accedi',  settings: { roles: [] } },
       { route: 'admin', moduleId: 'admin', title: 'Admin', settings: { roles: ['admin'] } },
       { route: 'about',   name: 'about',    moduleId: PLATFORM.moduleName('./components/about/about'), nav:true, title:'about' },
-      { route: `edit:id`,   name: 'edit',    moduleId: PLATFORM.moduleName('./components/edit/edit'), nav:true, title:'edit' },
+      { route: 'edit/:id?', href: 'edit', name: 'edit',    moduleId: PLATFORM.moduleName('./components/edit/edit'), nav:true, title:'edit' },
     ]);
   }
 }
